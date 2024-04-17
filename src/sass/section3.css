@@ -1,0 +1,609 @@
+.body-how-its-made {
+  display: inline-block;
+}
+.subtitle-how-its-made h2 {
+  font-family: var(--big-font);
+  font-size: var(--h2);
+  font-weight: 400;
+  color: var(--pink-elipse);
+  line-height: 20.61px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.h1-how-its-made {
+  font-family: var(--big-font);
+  font-weight: 400;
+  font-size: 34px;
+  color: var(--red-passion);
+  text-align: center;
+  line-height: 38.93px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subtitle-how-its-made {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  padding-top: 60px;
+  gap: 16px;
+}
+
+.how-its-made {
+  background-color: #fff5f6;
+  margin-bottom: 60px;
+}
+
+.container-img-p {
+  align-items: center;
+  background-image: url(../images/how-it-is-made/milkyway-bg.png.png);
+  background-size: 280px 133px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 25px 360px;
+}
+
+.container-img-p img {
+  width: 280px;
+  height: 279px;
+  margin-right: 20px;
+}
+
+.container-right {
+  flex-grow: 1;
+  padding-left: 10px;
+  background-size: 280px 133px;
+  background-repeat: no-repeat;
+  background-position: center top 50px;
+}
+
+.container-how-its-made {
+  width: 100%;
+  height: 1564px;
+}
+
+.p-how-its-made-1 {
+  font: var(--common-font);
+  font-weight: var(--weight-fnt-medium);
+  font-size: 12px;
+  color: var(--black);
+  line-height: 19.44px;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+  grid-template-rows: repeat(4, 1fr);
+  white-space: pre-line;
+}
+
+.p-how-its-made-2 {
+  font: var(--common-font);
+  font-weight: var(--weight-fnt-medium);
+  font-size: 12px;
+  line-height: 19.44px;
+  margin-bottom: 40px;
+  letter-spacing: 0.04em;
+  grid-template-rows: repeat(4, 1fr);
+  white-space: pre-line;
+}
+
+.btn-read-more {
+  margin-top: 40px;
+  border: none;
+  color: var(--red-button);
+  font: var(--common-font);
+  font-weight: var(--weight-fnt-big);
+  font-size: var(--primary-font-size);
+  line-height: 20.83px;
+  background-color: var(--white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.btn-read-more:hover {
+  cursor: pointer;
+
+  background-color: var(--red-button);
+  color: var(--white);
+  transition: var(--transition);
+}
+
+/* Section 3 Advantages */
+
+.hidden-title {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.h3-section3-advantages {
+  font-family: var(--big-font);
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--red-passion);
+  text-align: center;
+  line-height: 41.22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.p-section3-advantages {
+  font: var(--common-font);
+  font-weight: var(--weight-fnt-big);
+  font-size: 12px;
+  line-height: 20.4px;
+  letter-spacing: 0.02em;
+  color: var(--black);
+  text-align: left;
+}
+
+.advantages-grid {
+  background-color: var(--pink-made);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.advantage {
+  text-align: center;
+}
+
+.advantage h3 {
+  margin: 10px 0;
+}
+
+.advantage p {
+  margin: 0;
+}
+
+.section3-advantages {
+  width: 1200px;
+  height: 1229px;
+}
+
+.advantages-container {
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between grid items */
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.icon-production {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/production.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.icon-icecream-apple {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/icecream-apple.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.icon-flavours {
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/how-it-is-made/flavours.png');
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.container-p1-how-its-made {
+  width: 400px;
+  height: 104px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 40px;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--pink-bg);
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height:auto;
+  border-radius: 40px;
+  margin: auto;
+}
+
+.modal-read-more {
+  background-color: var(--pink-bg);
+  font: var(--common-font);
+  font-weight: var(--weight-fnt-big);
+  font-size: var(--primary-font-size);
+  color: var(--black);
+  text-align: left;
+}
+
+/* Stilizare Tableta  768px  */
+@media (min-width: 768px) and (max-width: 1158px) {
+  .body-how-its-made {
+    display: inline-block;
+  }
+  .container-how-its-made {
+    // height: 1092px;
+    width: 1200px;
+  }
+  .advantages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px;
+    width: 768px;
+  } /* Gap between grid items */
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .container-img-p {
+    display: flex;
+    align-items: center;
+    background-image: none;
+    background-size: cover;
+    width: auto;
+    position: relative;
+  }
+  .how-its-made {
+    background-color: #fff5f6;
+    margin-bottom: 60px;
+  }
+  .container-img-p img {
+    width: 336px;
+    height: 335px;
+    margin-right: 20px;
+    padding-left: 32px;
+    margin-bottom: 265px;
+  }
+  .h3-section3-advantages {
+    font-family: var(--big-font);
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--red-passion);
+    text-align: center;
+    line-height: 54.96px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .p-section3-advantages {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: 14px;
+    line-height: 24.36px;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    text-align: left;
+  }
+  .icon-production {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/production.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-icecream-apple {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/icecream-apple.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-flavours {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/flavours.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: var(--pink-bg);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 40px;
+    height: auto;
+  }
+
+  .modal-read-more {
+    background-color: var(--pink-bg);
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    color: var(--black);
+    text-align: left;
+  }
+}
+/* Desktop styles */
+@media screen and (min-width: 1159px) {
+  .body-how-its-made {
+    display: inline-block;
+  }
+  .subtitle {
+    font-family: var(--big-font);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--pink-elipse);
+    line-height: 34.35px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .h1-how-its-made {
+    font-family: var(--big-font);
+    font-weight: 400;
+    font-size: 58px;
+    color: var(--red-passion);
+    text-align: center;
+    line-height: 66.41px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .subtitle-how-its-made {
+    text-align: center;
+    margin-bottom: 16px;
+    padding-top: 60px;
+  }
+
+  .how-its-made {
+    background-color: #fff5f6;
+    margin-bottom: 60px;
+  }
+
+  .container-img-p {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/how-it-is-made/milkyway-bg.png.png);
+    background-size: cover;
+    width: auto;
+    background-position: 0px 0px;
+  }
+
+  .container-img-p img {
+    width: 501px;
+    height: 501px;
+    margin-right: 20px;
+  }
+
+  .container-right {
+    flex-grow: 1;
+    padding-left: 80px;
+  }
+
+  .container-how-its-made {
+    width: 100%;
+    height: 1229px;
+  }
+
+  .p-how-its-made-1 {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-medium);
+    font-size: var(--primary-font-size);
+    color: var(--black);
+    line-height: 28.16px;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    grid-template-rows: repeat(4, 1fr);
+    white-space: pre-line;
+  }
+
+  .p-how-its-made-2 {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-medium);
+    font-size: var(--secondary-font-size);
+    line-height: 27.16px;
+    margin-bottom: 40px;
+    letter-spacing: 0.04em;
+    grid-template-rows: repeat(4, 1fr);
+    white-space: pre-line;
+  }
+
+  .btn-read-more {
+    margin-top: 40px;
+    border: none;
+    color: var(--red-button);
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    line-height: 20.83px;
+    background-color: var(--white);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+
+  // .btn-read-more:hover {
+  //   cursor: pointer;
+
+  //   background-color: var(--pink-elipse);
+  // }
+
+  /* Section 3 Advantages */
+
+  .hidden-title {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .h3-section3-advantages {
+    font-family: var(--big-font);
+    font-weight: 400;
+    font-size: 58px;
+    color: var(--red-passion);
+    text-align: center;
+    line-height: 66.41px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .p-section3-advantages {
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    line-height: 28.16px;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .advantages-grid {
+    background-color: var(--pink-made);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .advantage {
+    text-align: baseline;
+  }
+
+  .advantage h3 {
+    margin: 10px 0;
+  }
+
+  .advantage p {
+    margin: 0;
+  }
+
+  .section3-advantages {
+    width: 1200px;
+    height: 1229px;
+  }
+
+  .advantages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between grid items */
+  }
+
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 20px;
+  }
+
+  .icon-production {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/production.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-icecream-apple {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/icecream-apple.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  .icon-flavours {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/how-it-is-made/flavours.png');
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+
+  .container-p1-how-its-made {
+    width: 400px;
+    height: 104px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: var(--pink-bg);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 40px;
+    height: auto;
+    line-height: 28.16px;
+  }
+
+  .modal-read-more {
+    background-color: var(--pink-bg);
+    font: var(--common-font);
+    font-weight: var(--weight-fnt-big);
+    font-size: var(--primary-font-size);
+    color: var(--black);
+    text-align: left;
+  }
+}

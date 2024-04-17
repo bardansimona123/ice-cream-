@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream</title>
+    <link rel="icon" type="image/x-icon" href="./images/header/group__1_.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./sass/index.css" />
+
+    <script type="module" src="./index.js"></script>
+    <script src="./section3-modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./burger-menu.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+
+    <!-- <include src="./partials/section-1-head.html"></include> -->
+    <section class="hero-section">
+      <header class="header">
+        <div class="container">
+          <div class="logo-container">
+            <a href="index.html">
+              <svg class="logo-svg">
+                <use
+                  href="/src/images/icons/symbol-defs.svg#icon-logo-header"
+                ></use>
+              </svg>
+            </a>
+            <nav>
+              <ul class="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#section3">How it's made?</a></li>
+                <li><a href="#section2">Our Products</a></li>
+                <li><a href="#section6">Contacts</a></li>
+              </ul>
+            </nav>
+            <button class="buy-button" type="button" id="openModal">
+              Buy Now
+              <svg class="button-svg">
+                <use
+                  href="/src/images/icons/symbol-defs.svg#icon-arrow-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="hero-right">
+          <div class="container">
+            <div class="hero-left">
+              <div class="first-section-titles">
+                <h1 class="third-title">
+                  ICE CREAM MADE WITH <span class="first-title">PASSION</span>
+                </h1>
+              </div>
+              <button class="first-button">Products</button>
+              <button class="second-button">How it's made?</button>
+              <div class="milk-can">
+                <div class="milk-photo">
+                  <img
+                    class="cup-of-milk"
+                    src="/src/images/header/milk-can.png"
+                    alt="Cup-of-milk"
+                  />
+                </div>
+                <div class="text-arrow">
+                  <p class="milk-text">
+                    Indulge in a scoop of ice cream made with passion and treat
+                    your taste buds to an unforgettable experience!
+                  </p>
+                  <img
+                    class="arrow-right"
+                    src="/src/images/header/arrow-right.png"
+                    alt="arrow-to-right"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cafes-group">
+              <div class="duo">
+                <span class="number">16</span>
+                <span class="cafes">cafes</span>
+              </div>
+              <span class="cafes-elipse"></span>
+            </div>
+            <div class="food-group">
+              <div class="duo">
+                <span class="number">23</span>
+                <span class="food">food trucks</span>
+              </div>
+            </div>
+            <span class="food-elipse"></span>
+            <div class="elipse-hero"><span></span></div>
+            <div class="pic">
+              <img
+                class="tasty-chiquita"
+                src="/src/images/header/chiquita.png"
+                alt="girl-enjoying-ice-cream"
+              />
+              <img
+                class="icecream-cone"
+                src="/src/images/header/ice-cream-header.png"
+                alt="cone-of-ice-cream"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- <include src="./partials/modal-favicon.html"></include> -->
+    <div id="modal" class="modal-buy-now">
+      <div class="modal-contentt">
+        <img class="logo-intreg" src=".\images\header\group.png" alt="">
+        <span class="close">&times;</span>
+        <div class="container-buy-now">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="./images/products/ice-cream.png" alt="desert">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="./images/products/milkshakes.png" alt="desert">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="./images/products/ice-coffee.png" alt="desert">
+            </label>
+          </div>
+        </div>
+        <div class="grid-modal">
+          <form method="POST" class="form login">
+            <div class="form_field">
+              <label><i class="fa fa-user" style="color: #606468;"></i></label>
+              <input type="text" name="username" class="form_input" placeholder="Username" required>
+            </div>
+            <div class="form_field">
+              <label><i class="fa fa-lock" style="color: #606468;"></i></label>
+              <input type="password" name="password" class="form_input" placeholder="Password" required>
+            </div>
+            <div class="form_field">
+              <button class="submitButton" type="submit">Submit</button>
+            </div>
+          </form>
+          <p class="text--center">Not a member? <a href="https://www.google.IceCream-Project-Team1"
+              class="register">Register</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <include src="./partials/products.html"></include> -->
+    <section id="section2">
+      <div class="products">
+          <label for="products-title">100% natural</label>
+          <h1 id="products-title">products</h1>
+          <div class="products-container">
+              <div class="product card-1">
+                  <h2>ice cream</h2>
+                  <p class="initial-description">Indulge in our rich and creamy ice cream, handcrafted with
+                     all-natural ingredients and available in a variety of flavors.
+                  </p>
+                  <button class="expand-btn" onclick="showDescription(this)" title="Show all description" 
+                  data-descriere-completa="We welcome you with a variety of vibrant tastes,from sweet strawberries and juicy 
+                  mangoes to peaches and exotic kiwi. Each mouthful will surprise you with its rich and creamy flavor,
+                  combined with the freshness of natural fruits. With our Ice Cream, every taste becomes an experience 
+                  full of joy and satisfaction. Choose to indulge your senses with the most delicios ice cream cone,
+                  available only for you!">
+                      <svg>
+                          <use href="./images/icons/symbol-defs-100.svg#icon-right-arrow"></use>
+                      </svg>
+                  </button>
+              </div>
+              <div class="product card-2">
+                  <h2>ice coffee</h2>
+                  <p class="initial-description">Refresh and energize with our perfectly brewed iced coffee,
+                     made with high-quality beans and served over ice.
+                  </p>
+                  <button class="expand-btn" onclick="showDescription(this)" title="Show all description" 
+                  data-descriere-completa=" Whether you're starting your day or need a mid-afternoon pick-me-up, our ice
+                   coffee is the perfect companion. Savor the rich aroma and bold flavor of our carefully selected beans,
+                    expertly brewed to perfection. With each sip, you'll experience a delightful balance of smoothness and
+                   invigorating caffeine kick. Treat yourself to the ultimate refreshment with our irresistible ice coffee,
+                    crafted to awaken your senses and keep you feeling revitalized throughout the day.">
+                      <svg>
+                          <use href="./images/icons/symbol-defs-100.svg#icon-right-arrow"></use>
+                      </svg>
+                  </button>
+              </div>
+              <div class="product card-3">
+                  <h2>milkshakes</h2>
+                  <p class="initial-description">Satisfy your sweet tooth with our thick, made with premium 
+                     ice cream, topped with whipped cream and your favorite toppings.
+                  </p>
+                  <button class="expand-btn" onclick="showDescription(this)" title="Show all description" 
+                  data-descriere-completa="With every indulgent gulp, you'll discover a perfect balance between creaminess
+                   and sweetness, creating a blissful sensation that lingers on your palate. Whether you're treating
+                    yourself to a midday delight or enjoying a late-night indulgence, our milkshakes are the perfect
+                     companion for any occasion. Elevate your dessert experience and satisfy your cravings with our
+                      heavenly milkshakes, meticulously crafted to bring joy to every sip.">
+                      <svg>
+                          <use href="./images/icons/symbol-defs-100.svg#icon-right-arrow"></use>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <script src="./index.js" type="text/javascript"></script>
+      </section>
+    <!-- <include src="./partials/section3.html"></include> -->
+    <section class="how-its-made container-how-its-made" id="section3">
+      <div class="subtitle-how-its-made">
+        <h2>TRADITION AND LOVE</h2>
+            <span class="h1-how-its-made">HOW IT'S MADE?</span>
+      </div>
+      <div class="container-img-p">
+
+        <img src="./images/how-it-is-made/cow-milkcan.png" alt="cow" width="501px" height="501px" />
+        <div class="container-right">
+          <p class="p-how-its-made-1">
+            Ice is a place where you will become not only a <br> little happier, but also healthier. Health is the <br>main value for us, and we follow it when creating <br> our handmade desserts.
+          </p>
+          <p class="p-how-its-made-2">
+            We use traditional recipes and 100% natural <br> ingredients. Our products are so natural that they can <br> be given to children from the age of three years. Sweets <br> lovers can expect 55 types of  ice cream, 15 types of <br> coffee and 23 milkshakes.
+          </p>
+          <button type="submit" class="btn-read-more" id="myBtn" Open Modal>Read more &gt;</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <p class="modal-read-more">Welcome to Ice, where happiness meets healthiness in every scoop. At Ice, we
+              prioritize
+              your well-being by crafting delightful desserts that are as good for you as they are
+              delicious. Our commitment to quality starts with traditional recipes and 100% natural
+              ingredients, ensuring our treats are safe even for children aged three and up.
+
+              Explore our menu to discover 55 delightful flavors of ice cream, 15 invigorating
+              varieties of coffee, and 23 refreshing milkshakes. Each creation is made with care and
+              passion, inviting you to savor the goodness of pure ingredients.
+
+              Join us on a journey of taste and wellness. At Ice, every bite is a moment of joy and
+              nourishment.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Section 3 Advantages  -->
+
+      <!-- Titlul ascuns pentru crawler-uri -->
+      <h2 class="hidden-title">Ice Cream</h2>
+      <div class="advantages-container">
+        <div class="advantages">
+          <span class="icon-production"></span>
+          <h1 class="h3-section3-advantages">721</h1>
+          <p class="p-section3-advantages">At 721 Cow, we're passionate about producing the highest quality ice
+            cream possible.</p>
+        </div>
+        <div class="advantages">
+          <span class="icon-icecream-apple"></span>
+          <h1 class="h3-section3-advantages">16kg</h1>
+          <p class="p-section3-advantages">You can be sure you're getting a scoop of the freshest ice cream
+            around.</p>
+        </div>
+        <div class="advantages">
+          <span class="icon-flavours"></span>
+          <h1 class="h3-section3-advantages">84</h1>
+          <p class="p-section3-advantages">We use only the freshest, locally-sourced ingredients to make our 84
+            unique and delicious flavors.</p>
+        </div>
+      </div>
+    </section>
+    <!-- <include src="./partials/test.html"></include> -->
+    <div class="gallery-massonry" style="width: 100%;">
+      <div class="grid">
+        <div class="grid-item1"><img src=".\images\gallery\img1.jpg" alt="Image 1"></div>
+        <div class="grid-item2"><img src=".\images\gallery\img2.jpg" alt="Image 2"></div>
+        <div class="grid-item3"><img src=".\images\gallery\img3.jpg" alt="Image 3"></div>
+        <div class="grid-item4"><img src=".\images\gallery\img4.jpg" alt="Image 4"></div>
+        <div class="grid-item5"><img src=".\images\gallery\img5.jpg" alt="Image 5"></div>
+        <div class="grid-item6"><img src=".\images\gallery\img6.jpg" alt="Image 6"></div>
+        <div class="grid-item7"><img src=".\images\gallery\img7.jpg" alt="Image 7"></div>
+        <div class="grid-item8"><img src=".\images\gallery\img8.jpg" alt="Image 8"></div>
+        <div class="grid-item9"><img src=".\images\gallery\img9.jpg" alt="Image 9"></div>
+        <div class="grid-item10"><img src=".\images\gallery\img10.jpg" alt="Image 10"></div>
+      </div>
+    </div>
+    <!-- <include src="./partials/reviews.html"></include> -->
+    <section class="testimonials">
+      <div class="test-slider">
+      <div class="carousel">
+          <div class="review active" id="review">
+              <img src="./images/reviews/testimonials1.png" 
+              alt="Emily"
+              width="85"
+              height="85">
+  
+              <div class="rvw">
+              <div class="rvw-text">
+              <blockquote class="comment">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition you have beautiful serving, cozy atmosphere and polite staff.</blockquote>
+              <!-- <img src="./images/reviews/underline.png"
+              alt="underline" width="821">
+              <img src="./images/reviews/underline.png" 
+              alt="underline" width="821"> -->
+              </div>
+              </div>
+  
+              <p>Emily, Los Angeles</p>
+              </div>
+  
+          <div class="review">
+  
+              <img src="./images/reviews/testimonials2.png" 
+              alt="Rachel" 
+              width="85" 
+              height="85">
+  
+              <div class="rvw">
+              <div class="rvw-text">
+              <blockquote class="comment">As an ice cream enthusiast, I'm always on the lookout for new flavors, and this company never fails to impress. Their unique seasonal offerings are always a treat to try.</blockquote>
+              </div>
+              </div>
+  
+                  <p>Rachel, New York</p>
+          </div>
+  
+          <div class="review">
+  
+              <img src="./images/reviews/testimonials3.png" 
+              alt="Tammy" 
+              width="85" 
+              height="85">
+  
+              <div class="rvw">
+              <div class="rvw-text">
+              <blockquote class="comment">Hands down, the best ice cream I've ever had! It never disappoints. Their commitment to using high-quality ingredients really shines through in every scoop.</blockquote>
+              </div>
+              </div>
+  
+              <p>Tammy, Philadelphia</p>
+          </div>
+  
+          <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+            
+      </div>
+  
+      </div>
+  
+      <script>
+          const slides = document.querySelectorAll('.review');
+          const dots = document.querySelectorAll('.dot');
+  
+          function activateSlide(index) {
+              slides.forEach((slide) => {
+                  slide.classList.remove('active');
+              });
+              dots.forEach((dot) => {
+                  dot.classList.remove('active');
+              });
+              slides[index].classList.add('active');
+              dots[index].classList.add('active');
+          }
+  
+          dots.forEach((dot, index) => {
+              dot.addEventListener('click', () => {
+                  activateSlide(index);
+              });
+          });
+  
+          function nextSlide() {
+                  currentSlide = (currentSlide + 1) % slides.length;
+                  activateSlide(currentSlide);
+              }
+  
+              dots.forEach((dot, index) => {
+                  dot.addEventListener('click', () => {
+                      activateSlide(index);
+                      currentSlide = index;
+                  });
+              });
+  
+              setInterval(nextSlide, 3000); // Change slide every 3 seconds (3000 milliseconds)
+  
+      </script>
+  </section>
+    <!-- <include src="./partials/section6.html"></include> -->
+    <section class="contacts" id="section6">
+      <div class="sct6">
+          <h1 class="hidden-element">CONTACTS</h1>
+          <ul class="cards-sct6">
+              <!--Card 1-->
+              <li class="contacts-card">
+                  <div class="cafe-card">
+                      <p>CAFE</p>
+                  </div>
+                  <div>
+                      <h3 class="city-card">Chicago</h3>
+                      <p class="text-card">Handcrafted coffee, baked goods,<br> and premium ice cream.</p>
+                  </div>
+                  <svg width="100%" height="2" viewBox="0 0 288 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H288" stroke="#E1E1E1"/>
+                  </svg>
+                  <div>
+                      <!-- <div>
+                          <h3 class="city-card">Chicago</h3>
+                          <p class="text-card">Handcrafted coffee, baked goods,<br> and premium ice cream.</p>
+                      </div>
+                      <svg width="288" height="2" viewBox="0 0 288 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H288" stroke="#E1E1E1"/>
+                      </svg>
+                      <div> -->
+                      <div>
+                          <h3 class="days-card">Monday - Friday</h3>
+                          <p class="hours-card">06:00 AM - 10:00 PM</p>
+                      </div>
+                      <div>
+                          <h3 class="days-card">Saturday - Sunday</h3>
+                          <p class="hours-card">08:00 AM - 16:00 PM</p>
+                      </div>
+                  </div>
+                  <svg width="100%" height="2" viewBox="0 0 288 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H288" stroke="#E1E1E1"/>
+                  </svg>
+                  <div class="addreses-card">
+                      <a href="tel:+610383766284" class="anchor-card">+61(0) 383 766 284</a><br>
+                      <a href="mailto:noreply@envato.com" class="anchor-card">noreply@envato.com</a>
+                  </div>
+              </li>
+              <!--Card 2-->
+              <li class="contacts-card">
+                  <div class="food-truck-card">
+                      <p>FOOD TRUCK</p>
+                  </div>
+                  <div>
+                      <h3 class="city-card">Los Angeles</h3>
+                      <p class="text-card">Fusion cuisine and refreshing<br> ice cream made with passion.</p>
+                  </div>
+                  <svg width="100%" height="2" viewBox="0 0 288 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H288" stroke="#E1E1E1"/>
+                  </svg>
+                  <div>
+                      <div>
+                          <h3 class="days-card">Monday - Friday</h3>
+                          <p class="hours-card">06:00 AM - 10:00 PM</p>
+                      </div>
+                      <div>
+                          <h3 class="days-card">Saturday - Sunday</h3>
+                          <p class="hours-card">08:00 AM - 16:00 PM</p>
+                      </div>
+                  </div>
+                  <svg width="100%" height="2" viewBox="0 0 288 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H288" stroke="#E1E1E1"/>
+                  </svg>
+                  <div class="addreses-card">
+                      <a href="tel:+610383766284" class="anchor-card">+61(0) 383 766 284</a><br>
+                      <a href="mailto:noreply@envato.com" class="anchor-card">noreply@envato.com</a>
+                  </div>
+              </li>
+              <!--Card 3-->
+              <li class="contacts-card">
+                  <div class="cafe-card">
+                      <p>CAFE</p>
+                  </div>
+                  <div>
+                      <h3 class="city-card">New York</h3>
+                      <p class="text-card">Specialty teas, artisanal pastries,<br> mouth-watering ice cream.</p>
+                  </div>
+                  <svg width="100%" height="2" viewBox="0 0 288 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H288" stroke="#E1E1E1"/>
+                  </svg>
+                  <div>
+                      <div>
+                          <h3 class="days-card">Monday - Friday</h3>
+                          <p class="hours-card">06:00 AM - 10:00 PM</p>
+                      </div>
+                      <div>
+                          <h3 class="days-card">Saturday - Sunday</h3>
+                          <p class="hours-card">08:00 AM - 16:00 PM</p>
+                      </div>
+                  </div>
+                  <svg width="100%" height="2" viewBox="0 0 288 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H288" stroke="#E1E1E1"/>
+                  </svg>
+                  <div class="addreses-card">
+                      <a href="tel:+610383766284" class="anchor-card">+61(0) 383 766 284</a><br>
+                      <a href="mailto:noreply@envato.com" class="anchor-card">noreply@envato.com</a>
+                  </div>
+              </li>
+          </ul>
+              <!--butoane-->
+              <div class="contact-buttons">
+                  <button type="button" onclick="document.getElementById('mdl1').style.display='block'" class="contact-btn-lct">Our Locations &nbsp;></button>
+                  <button type="button" onclick="document.getElementById('mdl2').style.display='block'" class="contact-btn-frcs">Franchise &nbsp;></button>
+              </div>
+              <div class="modals-section">
+                  <div id="mdl1" class="modal-sct6 modal1-sct6">
+                      <div class="sct6-modal-content">
+                          <div onclick="document.getElementById('mdl1').style.display='none'" class="sct6-close-btn">&times;</div>
+                          <div class="sct6-container">
+                            <p id="title-modal">You can find us here...</p>
+                            <div class="images-map">
+                              <img src="./images/map-modal1-sct6.jpg" alt="You can find us here..." id="harta">
+                            </div>
+                            <p id="text-adress">5820, Marion Center, Los Angeles, USA</p>
+                            <button type="button" class="sct6-modal-btn">Open in Google Map</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  <div id="mdl2" class="modal-sct6 modal2-sct6">
+                      <div class="sct6-modal-content">
+                          <span onclick="document.getElementById('mdl2').style.display='none'" class="sct6-close-btn">&times;</span>
+                          <div class="sct6-container">
+                              <p id="title-modal">Leave your details and we&apos;ll call you back</p>
+                              <div class="modal-form-container">
+                                  <form>
+                                      <label for="name">
+                                          <p class="sct6-modal-lbl-txt">Name</p>
+                                          <input type="text" id="name" name="name"  class="sct6-modal-input" required />
+                                      </label>
+                                      <label for="telephone">
+                                          <p class="sct6-modal-lbl-txt">Telephone</p>
+                                          <input type="text" id="telephone" name="telephone" class="sct6-modal-input" required />
+                                      </label>
+                                      <label for="e-mail">
+                                          <p class="sct6-modal-lbl-txt">E-mail</p>
+                                          <input type="text" id="e-mail" name="e-mail" autofocus class="sct6-modal-input" required />
+                                      </label>
+                                      <label for="comment">
+                                          <p class="sct6-modal-lbl-txt">A few words...</p>
+                                          <textarea name="comment" id="comment" rows="5" placeholder="Write here..." class="sct6-modal-input sct6-modal-input-text"></textarea>
+                                      </label>
+                                  </form>
+                              </div>
+                              <button type="button" class="sct6-modal-btn">Send</button>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+      </section>
+    <!-- <include src="./partials/footer.html"></include> -->
+    <footer class="footer-bg">
+      <div class="footer-container">
+        <!-- <div class="top-footer">
+         section6-->
+        <!-- <include src="./partials/section6.html"></include>
+        </div> --> 
+        <div class="top-footer">
+          <!-- section6-->
+          <!-- <include src="./partials/section6.html"></include> -->
+        </div>
+  
+        <div class="medium-footer">
+          <div class="left-footer">
+            <p class="motto1">HOMEMADE ICE CREAM MADE</p>
+            <p class="motto2">WITH PASSION</p>
+          </div>
+          <div class="central-footer"></div>
+          <div class="right-footer">
+            <!--Iconurile pt. social-media-->
+            <div class="social-media">
+              <ul class="social-links-list">
+                <li class="social-link-items">
+                  <a href="https://www.github.com/" target="_blank" aria-label="github-link">
+                    <svg class="social-icon"">
+                      <use href="/src/images/icons/symbol-defs.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-link-items">
+                  <a href="https://www.telegram.com/" target="_blank" class="social-icon" aria-label="twitter-link">
+                    <svg class="social-icon">
+                      <use href="/src/images/icons/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-link-items">
+                  <a href="https://www.facebook.com/" target="_blank" class="social-icon" aria-label="facebook-link">
+                    <svg class="social-icon">
+                      <use href="/src/images/icons/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!--Mesaj de contact-->
+              <div class="footer-contacts">
+                <p class="contact-message">Feel free to contact <span><a href="tel:+61(0)383766284" class="phone">+61 (0) 383 766 284</a></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <svg width="100%" height="2" viewBox="0 0 100% 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="line">
+            <path d="M0 1H1167" stroke="#E1E1E1"/>
+          </svg>
+          <div class="copyright">
+            <p>&copy; 2022 - IceCream. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <include src="./partials/burger-menu.html"></include> -->
+    <div class="container-burger">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          viewBox="0 0 20 14"
+          xmlns="http://www.w3.org/2000/svg"
+          class="burger-svg"
+        >
+          <path d="M0 1H20" stroke="#D41443" />
+          <path d="M0 7H20" stroke="#D41443" />
+          <path d="M0 13H20" stroke="#D41443" />
+        </svg>
+      </button>
+    </div>
+  
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="svg-close"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1.25928 1L14.7408 15" stroke="white" />
+          <path d="M1 14.7407L15 1.25924" stroke="white" />
+        </svg>
+      </button>
+  
+      <div class="container-buy-now-burger">
+        <button class="buy-button-burger" type="button" id="openModal">
+          Buy Now
+          <svg class="button-svg">
+            <use href="/src/images/icons/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+  
+      <ul class="mobile-menu">
+        <li><a href="#" class="link">Home</a></li>
+        <li><a href="#" class="link">About us</a></li>
+        <li><a href="#section3" class="link">How it's made?</a></li>
+        <li><a href="#section2" class="link">Our Products</a></li>
+        <li><a href="#section6" class="link">Contacts</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
