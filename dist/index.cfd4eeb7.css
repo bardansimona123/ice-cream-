@@ -1955,7 +1955,7 @@ p {
 }
 
 .sct6 {
-  background: rgba($ color: #000, $ alpha: 0);
+  background: none;
   background-color: var(--pink-made);
   flex-direction: column;
   justify-content: space-between;
@@ -1989,7 +1989,7 @@ p {
 }
 
 .cafe-card {
-  width: 75.1px;
+  width: 100px;
   height: 28px;
   opacity: 0px;
   background: var(--brown-ice-coffe);
@@ -2005,8 +2005,7 @@ p {
 }
 
 .food-truck-card {
-  width: 138px;
-  height: 28px;
+  width: 250px;
   opacity: 0px;
   background: var(--green-milkshake);
   font-family: var(--common-font);

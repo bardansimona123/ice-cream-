@@ -5,7 +5,7 @@
 }
 
 .sct6 {  
-    background: rgba($color: #000000, $alpha: 0.0);
+    background: rgba(0, 0 ,0, 0.0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 }
 
 .cafe-card {
-    width: 75.1px;
+    width: 100px;
     height: 28px;
     gap: 0px;
     border-radius: 6px 6px 6px 6px;
@@ -57,8 +57,7 @@
 }
 
 .food-truck-card {
-    width: 138px;
-    height: 28px;
+    width: 250px;
     gap: 0px;
     border-radius: 6px 6px 6px 6px;
     opacity: 0px;
